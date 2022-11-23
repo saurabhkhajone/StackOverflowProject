@@ -13,7 +13,7 @@ namespace StackOverflowProject.ServiceLayer
             {
                 if (map.SourceType.GetProperty(propName) != null)
                 {
-                    expr.ForMember(propName, opt => opt.Ignore());
+                    expr.ForSourceMember(propName, opt => opt.Ignore());
                 }
                 if (map.DestinationType.GetProperty(propName) != null)
                 {
